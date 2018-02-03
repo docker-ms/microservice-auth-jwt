@@ -1,0 +1,21 @@
+extends: google
+
+env:
+  node: true
+
+parserOptions:
+  ecmaVersion: 6
+  sourceType: module
+  ecmaFeatures:
+    impliedStrict: true
+
+rules:
+  indent:
+    - error
+  max-len:
+    - error
+    - 120
+  require-jsdoc: off
+
+globals:
+  tron: TRON
